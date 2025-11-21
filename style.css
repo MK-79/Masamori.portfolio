@@ -4,7 +4,7 @@ body {
     margin: 0;
     color: #333;
     background-color: #f9f9f9;
-    padding-top: 60px; /* ヘッダーが重ならないように余白を開ける */
+    padding-top: 70px; /* ヘッダーに隠れないように余白をあける */
 }
 
 .container {
@@ -13,52 +13,56 @@ body {
     padding: 0 20px;
 }
 
-/* ヘッダーのデザイン変更 */
+/* --- ヘッダーの固定とレイアウト設定 --- */
 header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    position: fixed; /* 常に画面の上に固定 */
+    background-color: #fff;    /* 背景を白にする */
+    width: 100%;               /* 横幅いっぱい */
+    height: 60px;              /* 高さ */
+    position: fixed;           /* ★ここで固定します！ */
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 100; /* 一番手前に表示 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 少し影をつけて浮いているように見せる */
+    z-index: 100;              /* 他の要素より手前に表示 */
 }
 
-.header-flex {
-    display: flex;             /* 横並びにする魔法 */
-    justify-content: space-between; /* 両端に離す */
-    align-items: center;       /* 上下の中心を揃える */
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;             /* ★左右に並べる設定 */
+    justify-content: space-between; /* 端と端に配置 */
+    align-items: center;       /* 上下の真ん中に配置 */
+    height: 100%;
 }
 
 .logo {
     font-size: 1.5rem;
     margin: 0;
+    color: #333;
 }
 
-/* ナビゲーションメニュー */
+/* メニューのデザイン */
 .nav-list {
     list-style: none;
-    display: flex;
-    gap: 20px;      /* メニュー同士の間隔 */
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px; /* メニューの間隔 */
 }
 
 .nav-list a {
-    color: white;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
 
 .nav-list a:hover {
-    color: #4dd0e1; /* カーソルを乗せた時の色 */
+    color: #007bff; /* カーソルを乗せたときの色 */
 }
 
-/* セクションごとの余白調整 */
+/* --- コンテンツ部分 --- */
 section {
-    padding-top: 80px; /* メニューに隠れないように調整 */
-    padding-bottom: 40px;
+    padding: 60px 0; /* 上下の余白 */
 }
 
 .hero {
@@ -71,7 +75,7 @@ section {
     margin-bottom: 30px;
 }
 
-/* 作品エリア */
+/* 作品エリアのデザイン */
 .work-box {
     background: white;
     border: 1px solid #ddd;
@@ -86,7 +90,8 @@ section {
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 10px;
-    display: block;     /* 画像を改行して表示 */
+    /* 画像を縦に並べる */
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }

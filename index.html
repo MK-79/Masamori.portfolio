@@ -9,12 +9,19 @@
 <body>
 
     <header>
-        <div class="container">
-            <h1>MK-79</h1>
+        <div class="container header-flex">
+            <h1 class="logo">MK-79</h1>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="about" class="hero">
         <div class="container">
             <h2>About Me</h2>
             <p>大阪公立大学 情報コースで学んでいます。<br>
@@ -22,13 +29,14 @@
         </div>
     </section>
 
-    <section class="container">
-        <h2>Works</h2>
+    <section id="works" class="container">
+        <h2 class="section-title">Works</h2>
         <div class="work-box">
+            
             <img src="images/work1.png" alt="Minecraft MOD 1" class="work-img">
             <img src="images/work2.png" alt="Minecraft MOD 2" class="work-img">
             <img src="images/work3.png" alt="Minecraft MOD 3" class="work-img">
-
+            
             <div class="work-text">
                 <h3>文化祭展示用 Minecraft MOD</h3>
                 <p>文化祭のために制作したオリジナルMODです。「〇〇」をテーマに、独自のモブやアイテムを追加しました。</p>

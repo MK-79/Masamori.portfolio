@@ -1,10 +1,10 @@
-/* 全体の設定 */
+
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0;
     color: #333;
     background-color: #f9f9f9;
-    padding-top: 70px; /* ヘッダーに隠れないように余白をあける */
+    padding-top: 70px; 
 }
 
 .container {
@@ -13,25 +13,25 @@ body {
     padding: 0 20px;
 }
 
-/* --- ヘッダーの固定とレイアウト設定 --- */
+
 header {
-    background-color: #fff;    /* 背景を白にする */
-    width: 100%;               /* 横幅いっぱい */
-    height: 60px;              /* 高さ */
-    position: fixed;           /* ここで固定 */
+    background-color: #fff;    
+    width: 100%;               
+    height: 60px;              
+    position: fixed;           
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影 */
-    z-index: 100;              /* 手前に表示 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    z-index: 100;              
 }
 
 .header-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;             /* 横並びにする */
-    justify-content: space-between; /* ★ここで左右の端に分けます */
-    align-items: center;       /* 上下の真ん中に配置 */
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;      
     height: 100%;
 }
 
@@ -41,9 +41,9 @@ header {
     color: #333;
 }
 
-/* --- メニューを強制的に右へ --- */
+
 nav {
-    margin-left: auto; /* ★念のため、左側に自動余白を入れて右へ押しやる */
+    margin-left: auto; 
 }
 
 .nav-list {
@@ -51,7 +51,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* メニューの間隔 */
+    gap: 20px;
 }
 
 .nav-list a {
@@ -61,10 +61,10 @@ nav {
 }
 
 .nav-list a:hover {
-    color: #007bff; /* カーソルを乗せたときの色 */
+    color: #007bff; 
 }
 
-/* --- コンテンツ部分 --- */
+
 section {
     padding: 60px 0;
 }
@@ -80,13 +80,15 @@ section {
     font-size: 2rem;
 }
 
-/* 作品エリアのデザイン */
+
 .work-box {
     background: white;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 .work-img {
@@ -101,7 +103,7 @@ section {
 }
 
 .work-text {
-    text-align: left; /* テキストは読みやすく左寄せ */
+    text-align: left; 
     margin-top: 20px;
 }
 
@@ -110,4 +112,9 @@ footer {
     padding: 20px;
     background: #eee;
     color: #666;
+}
+.hover-action:hover {
+    opacity: 0.8;       
+    cursor: pointer;    
+    transition: 0.3s;
 }

@@ -1,6 +1,6 @@
 /* 全体の設定 */
 body {
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0;
     color: #333;
     background-color: #f9f9f9;
@@ -18,19 +18,19 @@ header {
     background-color: #fff;    /* 背景を白にする */
     width: 100%;               /* 横幅いっぱい */
     height: 60px;              /* 高さ */
-    position: fixed;           /* ★ここで固定します！ */
+    position: fixed;           /* ここで固定 */
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 少し影をつけて浮いているように見せる */
-    z-index: 100;              /* 他の要素より手前に表示 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影 */
+    z-index: 100;              /* 手前に表示 */
 }
 
 .header-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;             /* ★左右に並べる設定 */
-    justify-content: space-between; /* 端と端に配置 */
+    display: flex;             /* 横並びにする */
+    justify-content: space-between; /* ★ここで左右の端に分けます */
     align-items: center;       /* 上下の真ん中に配置 */
     height: 100%;
 }
@@ -41,7 +41,11 @@ header {
     color: #333;
 }
 
-/* メニューのデザイン */
+/* --- メニューを強制的に右へ --- */
+nav {
+    margin-left: auto; /* ★念のため、左側に自動余白を入れて右へ押しやる */
+}
+
 .nav-list {
     list-style: none;
     margin: 0;
@@ -62,7 +66,7 @@ header {
 
 /* --- コンテンツ部分 --- */
 section {
-    padding: 60px 0; /* 上下の余白 */
+    padding: 60px 0;
 }
 
 .hero {
@@ -73,6 +77,7 @@ section {
 .section-title {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 /* 作品エリアのデザイン */
@@ -89,11 +94,15 @@ section {
     height: auto;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-    /* 画像を縦に並べる */
+    margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.work-text {
+    text-align: left; /* テキストは読みやすく左寄せ */
+    margin-top: 20px;
 }
 
 footer {

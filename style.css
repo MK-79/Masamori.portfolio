@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.hero {
+    background: #e0f7fa;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* 作品エリアのデザイン */
+.work-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.work-img {
+    max-width: 100%; /* 画像がはみ出さないようにする */
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #666;
+}
